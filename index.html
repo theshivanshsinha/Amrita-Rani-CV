@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+      }
+
+      .text-an {
+        color: black;
+      }
+
+      .profile-placeholder {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%; /* Creates a circular shape */
+        overflow: hidden; /* Clips the image to the circular shape */
+      }
+
+      .profile-placeholder img {
+        width: 100%; /* Fill the entire container width */
+        height: 100%; /* Fill the entire container height */
+        object-fit: cover; /* Ensures the image covers the entire circle without distortion */
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amrita Rani | Portfolio</title>
@@ -46,17 +73,16 @@
       <div class="container">
         <div class="hero-content">
           <h1>Hello, I'm <span>Amrita Rani</span></h1>
-          <h2>Computer Science Student & AI Enthusiast</h2>
-          <p>Dedicated to solving complex problems through technology</p>
+          <h2>Computer Science Student & Full-Stack Developer</h2>
+          <p>Specializing in MERN Stack and Machine Learning Solutions</p>
           <div class="hero-buttons">
             <a href="#contact" class="btn primary-btn">Contact Me</a>
             <a href="#projects" class="btn secondary-btn">View Projects</a>
           </div>
         </div>
         <div class="hero-image">
-          <!-- Placeholder for profile image -->
           <div class="profile-placeholder">
-            <img src="pic.jpg" width="200" height="50" />
+            <img src="pic.jpg" width="200" height="200" />
           </div>
         </div>
       </div>
@@ -69,28 +95,24 @@
         <div class="about-content">
           <div class="about-text">
             <h3>Professional Summary</h3>
-            <p>
-              Dedicated Computer Science student with strong programming,
-              problem-solving, and analytical skills. Proficient in Python,
-              AI/ML tools, and cybersecurity, with hands-on experience in video
-              processing and project management. Actively seeking opportunities
-              to leverage technical expertise and grow professionally.
+            <p class="text-an">
+              I am a third-year Computer Science student at KIIT University
+              specializing in the MERN stack with hands-on experience in machine
+              learning frameworks like Scikit-learn and TensorFlow. Passionate
+              about full-stack development and AI-driven solutions, I enjoy
+              building scalable applications and leveraging data-driven insights
+              to solve real-world problems.
             </p>
             <div class="social-links">
-              <a href="https://linkedin.com/in/Pushkarjay" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/amrita-rani-1a5077262"
+                target="_blank"
                 ><i class="fab fa-linkedin"></i
               ></a>
-              <a href="https://github.com/Pushkarjay" target="_blank"
+              <a href="https://github.com/Amrita120" target="_blank"
                 ><i class="fab fa-github"></i
               ></a>
-              <a href="https://leetcode.com/u/pushkarjay" target="_blank"
-                ><i class="fas fa-code"></i
-              ></a>
-              <a
-                href="https://hackerrank.com/profile/pushkarjay"
-                target="_blank"
-                ><i class="fab fa-hackerrank"></i
-              ></a>
+              <a href="#" target="_blank"><i class="fas fa-code"></i></a>
             </div>
           </div>
         </div>
@@ -106,40 +128,28 @@
             <h3>Technical Skills</h3>
             <div class="skills-grid">
               <div class="skill-item">
+                <h4>Full-Stack Development</h4>
+                <p>MERN Stack, Scalable Web Applications</p>
+              </div>
+              <div class="skill-item">
+                <h4>Machine Learning & AI</h4>
+                <p>TensorFlow, Scikit-learn, Neural Networks</p>
+              </div>
+              <div class="skill-item">
                 <h4>Programming Languages</h4>
-                <p>Python, C, Java (Basic)</p>
+                <p>JavaScript, Python, C</p>
               </div>
               <div class="skill-item">
-                <h4>AI/ML Tools</h4>
-                <p>OpenCV, NumPy, Pillow, Random Forest Classifier</p>
+                <h4>Cloud & Database</h4>
+                <p>AWS, MongoDB, MySQL</p>
               </div>
               <div class="skill-item">
-                <h4>Cybersecurity</h4>
-                <p>Predictive Analytics</p>
+                <h4>Data Structures & Algorithms</h4>
+                <p>Problem-Solving, Code Optimization</p>
               </div>
               <div class="skill-item">
-                <h4>Video Processing</h4>
-                <p>Object Detection, Virtual Prototyping</p>
-              </div>
-              <div class="skill-item">
-                <h4>Web Development</h4>
-                <p>HTML, SQL</p>
-              </div>
-              <div class="skill-item">
-                <h4>Operating Systems</h4>
-                <p>Windows, Linux</p>
-              </div>
-              <div class="skill-item">
-                <h4>Version Control</h4>
-                <p>Git & GitHub</p>
-              </div>
-              <div class="skill-item">
-                <h4>Machine Learning</h4>
-                <p>Automated Machine Learning (AutoML)</p>
-              </div>
-              <div class="skill-item">
-                <h4>Tools & Platforms</h4>
-                <p>Microsoft Office Suite (Excel, Word, PowerPoint)</p>
+                <h4>Tools & Technologies</h4>
+                <p>OpenCV, NLP, Git, TensorFlow</p>
               </div>
             </div>
           </div>
@@ -147,28 +157,20 @@
             <h3>Soft Skills</h3>
             <div class="skills-grid">
               <div class="skill-item">
-                <h4>Problem Solving</h4>
-                <p>Analytical Thinking & Project Management</p>
+                <h4>Problem-Solving</h4>
+                <p>Analyzing Complex Issues, Developing Solutions</p>
               </div>
               <div class="skill-item">
-                <h4>Teamwork</h4>
-                <p>Communication & Organizational Skills</p>
+                <h4>Time Management</h4>
+                <p>Prioritizing Tasks, Meeting Deadlines</p>
               </div>
               <div class="skill-item">
-                <h4>Critical Thinking</h4>
-                <p>Strategic Thinking</p>
+                <h4>Collaboration</h4>
+                <p>Cross-Functional Team Effectiveness</p>
               </div>
               <div class="skill-item">
-                <h4>Leadership</h4>
-                <p>Decision-Making, Risk Management & Ethics</p>
-              </div>
-              <div class="skill-item">
-                <h4>Ethics</h4>
-                <p>Ethical Theories and Frameworks</p>
-              </div>
-              <div class="skill-item">
-                <h4>Mathematical Skills</h4>
-                <p>Optimization & Logical Reasoning</p>
+                <h4>Adaptability</h4>
+                <p>Quick Learning, Handling Dynamic Challenges</p>
               </div>
             </div>
           </div>
@@ -189,74 +191,23 @@
               </h3>
               <h4>KIIT University, Bhubaneswar</h4>
               <p class="timeline-date">2022 – 2026</p>
+              <p>CGPA: 8.56</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3>Intermediate (12th Grade)</h3>
-              <h4>Delhi Public School , Bokaro Steel City , Jhakhand</h4>
-              <p class="timeline-date">2022</p>
+              <h4>Delhi Public School, Bokaro Steel City, Jharkhand</h4>
+              <p class="timeline-date">2020 – 2022</p>
               <p>Percentage: 93%</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-content">
               <h3>High School (10th Grade)</h3>
-              <h4>MKDAV , Daltonganj , Jhakhand</h4>
+              <h4>MKDAV, Daltonganj, Jharkhand</h4>
               <p class="timeline-date">2020</p>
-              <p>Percentage : 96%</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Intern - Video/Image Processing</h3>
-              <h4>CHESS, DRDO (Hyderabad)</h4>
-              <p class="timeline-date">Dec 2024 – Jan 2025</p>
-              <ul>
-                <li>
-                  Developed a framework for image preprocessing using OpenCV,
-                  NumPy, and Pillow.
-                </li>
-                <li>
-                  Integrated video analytics tools for data extraction and
-                  automated processes.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Social Entrepreneurship Intern</h3>
-              <h4>Hamari Pahchan NGO</h4>
-              <p class="timeline-date">Oct 2024 – Nov 2024</p>
-              <ul>
-                <li>
-                  Managed community development projects promoting social
-                  impact.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>AI/ML Intern</h3>
-              <h4>Aican Automate (via Teachnook)</h4>
-              <p class="timeline-date">Nov 2022 – Dec 2022</p>
-              <ul>
-                <li>
-                  Developed machine learning models and predictive automation
-                  solutions.
-                </li>
-              </ul>
+              <p>Percentage: 96%</p>
             </div>
           </div>
         </div>
@@ -270,103 +221,69 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-content">
-              <h3>Exoplanet Detection Using AI</h3>
+              <h3>Email Spam Classifier</h3>
               <p>
-                Utilized NASA Kepler data and Random Forest Classifier to
-                identify exoplanets.
+                Machine Learning model for detecting spam emails using NLP
+                techniques. Implemented Naïve Bayes and Logistic Regression
+                algorithms for high accuracy.
               </p>
               <div class="project-tags">
-                <span>Python</span>
                 <span>Machine Learning</span>
-                <span>Data Analysis</span>
+                <span>NLP</span>
+                <span>Python</span>
               </div>
               <div class="project-links">
-                <a href="#" class="btn small-btn">View Project</a>
+                <a
+                  href="https://github.com/Amrita120/Email-spam-classifier"
+                  class="btn small-btn"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
           <div class="project-card">
             <div class="project-content">
-              <h3>Python Countdown Timer</h3>
+              <h3>Bike Ride Request Forecasting</h3>
               <p>
-                Developed a timer with Tkinter featuring start, stop, pause, and
-                reset functionality.
+                Developed a machine learning model to predict ride demand using
+                feature engineering, Random Forest, and Linear Regression for
+                optimized ride allocation.
               </p>
               <div class="project-tags">
-                <span>Python</span>
-                <span>Tkinter</span>
-                <span>GUI Development</span>
+                <span>Machine Learning</span>
+                <span>Prediction</span>
+                <span>Data Analysis</span>
               </div>
               <div class="project-links">
-                <a href="#" class="btn small-btn">View Project</a>
+                <a
+                  href="https://github.com/Amrita120/Bike-Ride-Request-Forcasting"
+                  class="btn small-btn"
+                  >View Project</a
+                >
               </div>
             </div>
           </div>
-          <div class="project-card add-project">
+          <div class="project-card">
             <div class="project-content">
-              <h3>Add Your Project</h3>
+              <h3>Face Recognition Attendance System</h3>
               <p>
-                This is a placeholder for your future projects. You can add
-                details later.
+                AI-powered system using OpenCV, Dlib, and face_recognition
+                libraries for real-time face detection, automated attendance
+                tracking, and database integration.
               </p>
+              <div class="project-tags">
+                <span>AI</span>
+                <span>OpenCV</span>
+                <span>Face Recognition</span>
+              </div>
               <div class="project-links">
-                <a href="#" class="btn small-btn">Add Project</a>
+                <a
+                  href="https://github.com/Amrita120/Face-Detection-based-Attendence-system"
+                  class="btn small-btn"
+                  >View Project</a
+                >
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-      <div class="container">
-        <h2 class="section-title">Certifications</h2>
-        <div class="certifications-grid">
-          <div class="certification-card">
-            <h3>Business Analytics for Decision Making</h3>
-            <p>University of Colorado Boulder</p>
-            <p class="credential">Credential ID: VXTRVYFFPHOD</p>
-          </div>
-          <div class="certification-card">
-            <h3>Business for Good: Fundamentals of Corporate Responsibility</h3>
-            <p>London Business School</p>
-            <p class="credential">Credential ID: NPAKXML0IPF4</p>
-          </div>
-          <div class="certification-card">
-            <h3>Corporate Governance</h3>
-            <p>Coursera</p>
-            <p class="credential">Credential ID: FR2YEW6326XB</p>
-          </div>
-          <div class="certification-card">
-            <h3>Ethical Decision Making for Success in the Tech Industry</h3>
-            <p>University of Colorado Boulder</p>
-            <p class="credential">Credential ID: 6UDJ9X3RGWGC</p>
-          </div>
-          <div class="certification-card">
-            <h3>Git & GitHub</h3>
-            <p>Geekster</p>
-            <p class="credential">Skills: Git, GitHub</p>
-          </div>
-          <div class="certification-card">
-            <h3>Strategy and Game Theory for Management</h3>
-            <p>Indian Institute of Management Ahmedabad</p>
-            <p class="credential">Credential ID: Y8ME5N5EWT4J</p>
-          </div>
-          <div class="certification-card">
-            <h3>Aican Certified: Artificial Intelligence</h3>
-            <p>AICAN Private Limited</p>
-            <p class="credential">Credential ID: TNINTC22-2053</p>
-          </div>
-          <div class="certification-card">
-            <h3>Artificial Intelligence Certification</h3>
-            <p>Wissenaire, IIT Bhubaneswar</p>
-            <p class="credential">Credential ID: TNINTC22-4357</p>
-          </div>
-          <div class="certification-card">
-            <h3>Social Entrepreneurship</h3>
-            <p>Hamari Pahchan NGO</p>
-            <p class="credential">Certificate ID: 42n2o0palj0</p>
           </div>
         </div>
       </div>
@@ -379,27 +296,21 @@
         <div class="hobbies-container">
           <div class="hobby-item">
             <div class="hobby-icon">
-              <i class="fas fa-chess"></i>
-            </div>
-            <h3>Chess</h3>
-          </div>
-          <div class="hobby-item">
-            <div class="hobby-icon">
-              <i class="fas fa-badminton"></i>
-            </div>
-            <h3>Badminton</h3>
-          </div>
-          <div class="hobby-item">
-            <div class="hobby-icon">
               <i class="fas fa-plane"></i>
             </div>
             <h3>Traveling</h3>
           </div>
-          <div class="hobby-item add-hobby">
+          <div class="hobby-item">
             <div class="hobby-icon">
-              <i class="fas fa-plus"></i>
+              <i class="fas fa-palette"></i>
             </div>
-            <h3>Add More</h3>
+            <h3>Painting</h3>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-icon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Cooking</h3>
           </div>
         </div>
       </div>
@@ -417,7 +328,7 @@
             </div>
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <p>22053224@kiit.ac.in</p>
+              <p>raniamrita1200@gmail.com</p>
             </div>
             <div class="contact-item">
               <i class="fab fa-linkedin"></i>
@@ -425,7 +336,7 @@
             </div>
             <div class="contact-item">
               <i class="fab fa-github"></i>
-              <p>https://github.com/Amrita120?tab=repositories</p>
+              <p>https://github.com/Amrita120</p>
             </div>
           </div>
           <div class="contact-form">
@@ -466,17 +377,13 @@
         <div class="footer-content">
           <p>&copy; 2025 Amrita Rani. All Rights Reserved.</p>
           <div class="social-links">
-            <a href="https://linkedin.com/in/Pushkarjay" target="_blank"
+            <a
+              href="https://www.linkedin.com/in/amrita-rani-1a5077262"
+              target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
-            <a href="https://github.com/Pushkarjay" target="_blank"
+            <a href="https://github.com/Amrita120" target="_blank"
               ><i class="fab fa-github"></i
-            ></a>
-            <a href="https://leetcode.com/u/pushkarjay" target="_blank"
-              ><i class="fas fa-code"></i
-            ></a>
-            <a href="https://hackerrank.com/profile/pushkarjay" target="_blank"
-              ><i class="fab fa-hackerrank"></i
             ></a>
           </div>
         </div>
